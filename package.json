@@ -2,12 +2,14 @@
   "name": "react-spreadsheet",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://vaishnavi-pashikanti.github.io/InscriptAssign",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",
@@ -24,6 +26,7 @@
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
